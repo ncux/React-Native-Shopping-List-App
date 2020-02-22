@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { ItemsState } from './contexts/items/context';
 import Header from './components/header';
 import ItemsList from './components/ItemsList';
+import AddItem from './components/addItem';
 
 
 const App = () => {   
@@ -12,6 +13,7 @@ const App = () => {
         <ItemsState>            
             <View style={ styles.viewStyle }>           
                 <Header />
+                <AddItem />
                 <ItemsList />
             </View>
         </ItemsState>

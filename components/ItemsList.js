@@ -11,8 +11,7 @@ const ItemsList = () => {
     const { items } = useContext(ItemsContext);
     
     return (
-        <View style={ styles.viewStyle }>       
-          
+        <View>        
             <FlatList data={ items } renderItem={ ({item}) => (
                 <Item item={ item } />
             ) } />
@@ -23,11 +22,6 @@ const ItemsList = () => {
 
 export default ItemsList;
 
-const styles = StyleSheet.create({
-
-   
-
-});
 
 
 

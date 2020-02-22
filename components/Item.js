@@ -15,8 +15,7 @@ const Item = ({ item }) => {
                 <Icon onPress={ () => deleteItem(item.id) } name="trash" size={20} color="firebrick" />
            </View>
         </TouchableOpacity>
-    );    
-    
+    );  
 };
 
 export default Item;

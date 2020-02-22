@@ -20,11 +20,18 @@ export const ItemsState = props => {
         setItems(filteredItems);
     };
 
+    const addItem = text => {
+        if(text == '') return;
+        const newItem = { id: uuid(), text };
+        setItems([newItem, ...items]);
+    };
+
     
     return (
         <ItemsContext.Provider value={{
             title,
             items,
+            addItem,
             deleteItem
         }}>
             { props.children }
